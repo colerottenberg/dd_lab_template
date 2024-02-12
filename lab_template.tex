@@ -4,14 +4,46 @@
 \usepackage{listings}
 \usepackage{float}
 \usepackage{indentfirst}
+\usepackage{xcolor}
 
 \title{EEL 4712C - Digital Design: Lab Report}
 \author{Cole Rottenberg \\ 11062528}
 \date{Due Date}
 
+\lstset{
+  language=VHDL,
+  numbers=left,
+  stepnumber=1,
+  tabsize=2,
+  numbersep=5pt,
+  backgroundcolor=\color{white},
+  showspaces=false,
+  showtabs=true,
+  frame=single,
+  rulecolor=\color{black},
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=true,
+  title=\lstname,
+}
+
 \begin{document}
 
 \maketitle
+
+% Test VHDL code
+\begin{lstlisting}[caption=Test VHDL Code, label=lst:test-vhdl-code]
+-- This is a test VHDL code block
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+
+entity test is
+    Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           c : out  STD_LOGIC);
+end test;
+\end{lstlisting}
 
 \section*{Prelab Report}
 
